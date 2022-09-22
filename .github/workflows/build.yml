@@ -25,6 +25,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{b0932c05-c730-4f8a-9a46-c2ad41e53f25}}
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "jasmines-basic-webapp"
           heroku_email: "junn@andrew.cmu.edu"
